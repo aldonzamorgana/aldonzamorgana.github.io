@@ -159,7 +159,7 @@ main {
 .grid__item {
 	display: flex;
 	justify-content: center;
-	margin: 0 0 10rem 0;
+	margin: 0 0 8rem 0;
 	cursor: pointer;
 }
 
@@ -524,12 +524,20 @@ main {
 @media screen and (max-width: 600px) {
 	.sub_title{
 		padding:0rem;
+		font-size: 15px;
 	}
 	.box__title{
 		color:#ffffff;
 	}
 	.overlay__content_image_one{
-		margin: 0;
+		margin: 10px 0px;
+	}
+
+	.overlay__content_image_three{
+		margin: 10px 0px;
+	}
+	.box__title-inner{
+		font-size: 2.3rem;
 	}
 }
 

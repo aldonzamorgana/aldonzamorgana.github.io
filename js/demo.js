@@ -185,6 +185,8 @@
         show(contentItem) {
             this.contentItem = contentItem;
             this.DOM.el.classList.add('overlay--open');
+            document.body.querySelector('.sub_title').style.opacity = 0;
+
             // show revealer
             TweenMax.to(this.DOM.reveal, .5, {
                 ease: 'Power1.easeInOut',
@@ -236,7 +238,7 @@
         }
         hide() {
             this.DOM.el.classList.remove('overlay--open');
-
+            document.body.querySelector('.sub_title').style.opacity = 1;
             // show revealer
             TweenMax.to(this.DOM.reveal, .5, {
                 //delay: 0.15,
